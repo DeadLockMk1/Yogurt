@@ -68,9 +68,9 @@
 		<div class="container">
 			<p>Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 			All Rights Reserved.<br/>
-			<?php echo Yii::powered(); ?></p>
+			Powered by Yii Framework <?=Yii::getVersion()?><br></p>
 		</div>
 	</footer>
-	
+
 </body>
 </html>
