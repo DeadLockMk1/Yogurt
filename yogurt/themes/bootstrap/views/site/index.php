@@ -6,4 +6,4 @@ $this->pageTitle=Yii::app()->name;
 
 <h2>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h2>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+<h3>Index page</h3>
