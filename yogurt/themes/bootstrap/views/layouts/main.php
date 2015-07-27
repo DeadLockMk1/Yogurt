@@ -8,9 +8,10 @@
 	<meta name="author" content="">
 
 	<!-- Le styles -->
-	<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet">
+<!--	<link href="--><?php //echo Yii::app()->theme->baseUrl; ?><!--/css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/application.min.css" rel="stylesheet">
 	<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/custom.css" rel="stylesheet">
 
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -25,39 +26,59 @@
 </head>
 
 <body>
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="brand" href="<?php echo $this->createAbsoluteUrl('//'); ?>"><?php echo CHtml::encode(Yii::app()->name); ?></a>
-				<?php $this->widget('zii.widgets.CMenu',array(
-					'items'=>array(
-						array('label'=>'Home', 'url'=>array('/site/index')),
-//						array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-						array('label'=>'Contact', 'url'=>array('/site/contact')),
-						array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-					),
-					'htmlOptions'=>array(
-						'class'=>'nav',
-					),
-				)); ?>
-				<?php $this->widget('zii.widgets.CMenu',array(
-					'items'=>array(
-						array('label'=>Yii::app()->user->name, 'url'=>array('site/profile'), 'visible'=>!Yii::app()->user->isGuest),
-						array('label'=>'Logout', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest, 'htmlOptions'=>array('class'=>'btn'))
-					),
-					'htmlOptions'=>array(
-						'class'=>'nav pull-right',
-					),
-				)); ?>
-			</div>
-		</div>
-	</div>
+<?php
+echo CHtml::openTag('div', array('class' => 'bs-navbar-top-example'));
+if (Yii::app()->user->isGuest) {
+    $nav = array(
+        array('label'=>'Login', 'url'=>array('site/login'))
+    );
+} elseif (Yii::app()->user->name=='admin') {
+    $nav = array(
+        array(
+            'label' => 'Dashboard',
+            'items' => array(
+                array('label' => 'Dashboard home', 'url' => array('dashboard/home')),
+                array('label' => 'Resources list', 'url' => array('dashboard/resourcesList')),
+                'Resources management',
+                array('label' => 'Add resource', 'url' => array('dashboard/newResource')),
+            )
+        ),
+        array('label'=>'Profile', 'url'=>array('site/profile')),
+        array('label'=>'Logout', 'url'=>array('site/logout')),
+    );
+} else {
+    $nav = array(
+        array('label'=>'Profile', 'url'=>array('site/profile')),
+        array('label'=>'Logout', 'url'=>array('site/logout'))
+    );
+}
+$this->widget(
+    'booster.widgets.TbNavbar',
+    array(
+        'brand' => CHtml::encode(Yii::app()->name),
+        'brandOptions' => array('style' => 'width:auto;margin-left: 0px;'),
+//        'type'=> 'inverse',
+        'fixed' => false,
+        'fluid' => true,
+        'collapse' => true,
+        'htmlOptions' => array('style' => 'position:relative'),
+        'items' => array(
+            array(
+                'class' => 'booster.widgets.TbMenu',
+                'type' => 'navbar',
+                'items' => $nav
+            )
+        )
+    )
+);
+echo CHtml::closeTag('div');
+?>
 	
 	<div class="container">
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('BBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
-			'separator'=>' / ',
+			'separator'=>'',
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 	</div>

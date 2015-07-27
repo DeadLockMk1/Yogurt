@@ -1,0 +1,245 @@
+{
+  "errorCode": 0,
+  "errorMessage": "",
+  "itemsList": [
+    {
+      "errorCode": 0,
+      "errorMessage": "",
+      "host": "localhost",
+      "id": 869529683,
+      "itemObject": {
+        "avgSpeed": 6272,
+        "avgSpeedCounter": 1752,
+        "cDate": "2015-07-22 16:57:05",
+        "collectedURLs": 200,
+        "contents": 119,
+        "deletedURLs": 0,
+        "description": "fox",
+        "errorMask": 137438953472,
+        "errors": 12,
+        "fetchType": 1,
+        "filters": [
+          {
+            "action": 1,
+            "cDate": "2015-07-22 16:57:17",
+            "groupId": 0,
+            "mode": 0,
+            "opCode": 0,
+            "pattern": "^(?:http(?:s)?://)?(?:[^.]+.)?foxnews.com(.*)",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "stage": 5,
+            "state": 1,
+            "subject": "",
+            "type": 1,
+            "uDate": "2015-07-22 16:57:17"
+          }
+        ],
+        "httpTimeout": 30000,
+        "id": "04e9521311104f6d033645397a551820",
+        "iterations": 10,
+        "maxErrors": 400,
+        "maxResourceSize": 1000000,
+        "maxResources": 200,
+        "maxURLs": 200,
+        "maxURLsFromPage": 50,
+        "moveURLs": true,
+        "newURLs": 68,
+        "priority": 100,
+        "processingDelay": 500,
+        "properties": [
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "SCRAPING_TYPE_NAME",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "NEWS"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "DB_TASK_MODE",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "RO"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "HTTP_REDIRECTS_MAX",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "5"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "PROCESSOR_PROPERTIES",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "{\"algorithm\":{\"algorithm_name\":\"user_name_algorithm\"},\"modules\":{\"user_name_algorithm\":[\"ScrapyExtractor\",\"GooseExtractor\",\"NewspaperExtractor\"]}}"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "HTML_REDIRECTS_MAX",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "5"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "HTML_RECOVER",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "0"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "SITE_ID_MD5_SOURCE",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "110-http://www.foxnews.com/politics/index.html"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "template",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "{\"templates\":[{\"output_format\":{\"name\":\"json\",\"header\":\"[\\n\",\"items_header\":\"\",\"item\":\"{\\n\\\"pubdate\\\":\\\"%pubdate%\\\",\\n\\\"title\\\":\\\"%title%\\\",\\n\\\"description\\\":\\\"%description%\\\",\\n\\\"media\\\":\\\"%media%\\\",\\n\\\"author\\\":\\\"%author%\\\",\\n\\\"dc_date\\\":\\\"%dc_date%\\\",\\n\\\"link\\\":\\\"%link%\\\",\\n\\\"keywords\\\":\\\"%keywords%\\\",\\n\\\"content_encoded\\\":\\\"%content_encoded%\\\",\\n\\\"html_lang\\\":\\\"%html_lang%\\\",\\n\\\"pubdate_extractor\\\":\\\"%pubdate_extractor%\\\",\\n\\\"title_extractor\\\":\\\"%title_extractor%\\\",\\n\\\"description_extractor\\\":\\\"%description_extractor%\\\",\\n\\\"media_extractor\\\":\\\"%media_extractor%\\\",\\n\\\"author_extractor\\\":\\\"%author_extractor%\\\",\\n\\\"dc_date_extractor\\\":\\\"%dc_date_extractor%\\\",\\n\\\"link_extractor\\\":\\\"%link_extractor%\\\",\\n\\\"keywords_extractor\\\":\\\"%keywords_extractor%\\\",\\n\\\"content_encoded_extractor\\\":\\\"%content_encoded_extractor%\\\",\\n\\\"html_lang_extractor\\\":\\\"%html_lang_extractor%\\\",\\n\\\"crawler_time\\\":\\\"%crawler_time%\\\",\\n\\\"scraper_time\\\":\\\"%scraper_time%\\\",\\n\\\"errors_mask\\\":\\\"%errors_mask%\\\"\\n}\\n\",\"items_footer\":\"\",\"footer\":\"]\\n\"},\"tags\":{\"pubdate\":{\"default\":\"\"},\"title\":{\"default\":\"\"},\"description\":{\"default\":\"\"},\"media\":{\"default\":\"\"},\"author\":{\"default\":\"\"},\"dc_date\":{\"default\":\"\"},\"link\":{\"default\":\"\"},\"keywords\":{\"default\":\"\"},\"content_encoded\":{\"default\":\"\"},\"html_lang\":{\"default\":\"\"},\"errors_mask\":{\"default\":\"\"}},\"priority\":\"100\",\"mandatory\":\"1\",\"is_filled\":\"0\"}],\"select\":\"first_nonempty\"}"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "CONTENT_HASH",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "{ \"algorithm\": 1, \"tags\": \"title,description,content_encoded,media,pubdate\", \"delete\": 1 }"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "PROCESS_CTYPES",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "text/html"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "RECRAWL_DELETE_WHERE",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "(`Status`=1 OR (`Status`=4 AND Crawled=0 AND Processed=0) OR `PDate`<CURDATE() OR `PDate` IS NULL OR CDate<CURDATE()) AND `ParentMd5`<>''"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "STORE_HTTP_REQUEST",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "1"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "AUTO_REMOVE_RESOURCES",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "1"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "AUTO_REMOVE_WHERE",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(UDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "AUTO_REMOVE_ORDER",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "ContentType ASC, Crawled ASC, TagsCount ASC, UDate ASC"
+          },
+          {
+            "cDate": "2015-07-22 16:57:17",
+            "name": "STORE_HTTP_HEADERS",
+            "siteId": "04e9521311104f6d033645397a551820",
+            "uDate": "2015-07-22 16:57:17",
+            "urlMd5": "\"\"",
+            "value": "1"
+          }
+        ],
+        "recrawlDate": "2015-07-25 02:53:00",
+        "recrawlPeriod": 240,
+        "requestDelay": 500,
+        "resources": 0,
+        "size": 1186931,
+        "state": 1,
+        "tcDate": "2015-07-24 23:44:01",
+        "tcDateProcess": "2015-07-24 23:44:02",
+        "uDate": "2015-07-24 22:37:35",
+        "urlType": 0,
+        "urls": [
+          {
+            "CDate": "2015-07-22 16:57:17",
+            "UDate": null,
+            "batchId": 0,
+            "charset": "",
+            "contentMask": 0,
+            "contentType": "",
+            "contentURLMd5": "",
+            "crawled": 0,
+            "crawlingTime": 0,
+            "depth": 0,
+            "eTag": "",
+            "errorMask": 0,
+            "freq": 0,
+            "httpCode": 0,
+            "httpMethod": "get",
+            "httpTimeout": 30000,
+            "lastModified": null,
+            "linksE": 0,
+            "linksI": 0,
+            "mRate": 0.0,
+            "mRateCounter": 0,
+            "maxURLsFromPage": 0,
+            "pDate": null,
+            "parentMd5": "",
+            "priority": 0,
+            "processed": 0,
+            "processingDelay": 500,
+            "processingTime": 0,
+            "rawContentMd5": "",
+            "requestDelay": 500,
+            "siteId": "04e9521311104f6d033645397a551820",
+            "siteSelect": 0,
+            "size": 0,
+            "state": 0,
+            "status": 1,
+            "tagsCount": 0,
+            "tagsMask": 0,
+            "tcDate": null,
+            "totalTime": 0,
+            "type": 0,
+            "url": "http://www.foxnews.com/politics/index.html",
+            "urlMd5": "511696e4f7d627bc648ca5dc03b51f0c",
+            "urlPut": null,
+            "urlUpdate": null,
+            "userId": 110
+          }
+        ],
+        "userId": 110
+      },
+      "node": "m011_data",
+      "port": "5530",
+      "time": 162
+    }
+  ]
+}

@@ -16,14 +16,23 @@
 						'type' => 'list',
 						'items' => array(
 							array(
-								'label' => 'Resources management',
+								'label' => 'Dashboard',
 								'itemOptions' => array('class' => 'nav-header')
 							),
 							'',
 							array(
+								'label' => 'Home',
+								'url' => array('dashboard/home'),
+								'itemOptions' => array('class' => '')
+							),
+							array(
 								'label' => 'Resources list',
 								'url' => '#',
 								'itemOptions' => array('class' => '')
+							),
+							array(
+								'label' => 'Resources management',
+								'itemOptions' => array('class' => 'nav-header')
 							),
 							array(
 								'label' => 'Add resource',
